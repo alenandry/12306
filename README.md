@@ -1,8 +1,6 @@
 ### 12306 购票小助手
 #### python版本
-  - [ ] 2.7.10 - 2.7.15
   - [x] 3.6 - 3.7.4
-  - [ ] 2.7.9
 
 #### 已有功能
   - [x] 自动打码
@@ -40,8 +38,6 @@
       - 5、`sudo ./docker.sh logs` #在后台运行时，通过此命令查看运行的内容
       - 注: 针对没有docker环境的同学提供了docker安装脚本(**<font color="red">centos7</font>**)
             - `sudo ./docker_install_centos.sh`
-      - ~~注: 若只有docker没有docker-compose. 可通过`pip install docker-compose`进行下载~~
-
 #### 目录对应说明
   - agency - cdn代理
   - config - 项目配置
@@ -73,17 +69,5 @@
         排队等待时间预计还剩 -4 ms
         恭喜您订票成功，订单号为：EB52743573, 请立即打开浏览器登录12306，访问‘未完成订单’，在30分钟内完成支付！
         ```
-#### 使用帮助(一些安装问题和使用反馈较多的问题)：
-   - 测试邮箱是否可用 [邮箱配置问题看issues](https://github.com/testerSunshine/12306/issues/107)
-   - 学生票issues [学生票修改](https://github.com/testerSunshine/12306/issues/47)
-   - 依赖安装不对的问题（ImportError）[requirements.txt问题](https://github.com/testerSunshine/12306/issues/91)
-   - 若快豆子疑问 [点我](https://github.com/testerSunshine/12306/issues/67)
-   - IOError: 【Errno 0】 Error 问题 [点我](https://github.com/testerSunshine/12306/issues/159)
-    
-   - 测试下单接口是否可用，有两个下单接口，随便用哪个都ok
-   - 如果下载验证码过期或者下载失败的问题，应该是12306封ip的策略，多重试几次，12306现在封服务器(阿里云和腾讯云)ip比较严重，尽量不要放在服务器里面
-   - 目前12306对服务器ip比较敏感，大家还是在自己家里挂着吧
-   - 自动更换ip软件目前已支持TPLINK和小米路由器，只限家庭网络[点我跳转](https://github.com/testerSunshine/AutoRouterIP)
-
 #### 更新日志
    - [更新日志](Update.md)
